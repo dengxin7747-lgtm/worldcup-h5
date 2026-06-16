@@ -156,14 +156,14 @@ body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;backgr
 <div class="content active" id="tab-matches"><div id="matchesWrap"></div></div>
 <div class="content" id="tab-standings"><div id="standingsWrap"></div></div>
 <div class="content" id="tab-teams"><div id="teamsWrap"></div></div>
-<div class="content" id="tab-rules"><div id="rulesWrap"></div></div>
+<!-- 铁律库已隐藏 -->
 
 <!-- Bottom Nav -->
 <div class="tab-bar">
   <div class="tab-btn active" data-tab="matches"><span class="icon">📋</span>今日赛程</div>
   <div class="tab-btn" data-tab="standings"><span class="icon">🏆</span>积分榜</div>
   <div class="tab-btn" data-tab="teams"><span class="icon">⚽</span>球队数据</div>
-  <div class="tab-btn" data-tab="rules"><span class="icon">📜</span>铁律库</div>
+  <!-- 铁律库已隐藏 <div class="tab-btn" data-tab="rules"><span class="icon">📜</span>铁律库</div> -->
 </div>
 
 <script>
@@ -586,7 +586,6 @@ document.querySelectorAll('.tab-btn').forEach(btn=>{
     ['📋 renderMatches', renderMatches],
     ['🏆 renderStandings', renderStandings],
     ['⚽ renderTeams', renderTeams],
-    ['📜 renderRules', renderRules],
   ];
   let errs = [];
   fns.forEach(([name, fn]) => {
